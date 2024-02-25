@@ -13,6 +13,9 @@ const config: Config = {
         ASCENT: "#212731",
         WHITE: "#FFFFFF",
         GREY1: "#FFFFFF",
+        GREYBG: "#FBFCFD",
+        GREYLIGHT1: "#4B5665",
+        DARKBLUE1: "#2C384A",
       },
       padding: {
         xl: "300px",

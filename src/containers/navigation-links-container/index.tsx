@@ -4,7 +4,7 @@ import React from "react";
 
 const NavigationLinksContainer: React.FC = () => {
   return (
-    <div className=" flex gap-16 text-sm text-GREY1 min-w-[50%] justify-end">
+    <div className=" flex gap-16 text-sm font-light text-GREY1 min-w-[50%] justify-end">
       {NAVIGATION_LINKS.map((linkObject) => (
         <Link
           className="hover:font-semibold transition-all duration-500 text-nowrap"
