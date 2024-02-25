@@ -10,4 +10,4 @@ const SEARCH_DETAIL = [
   },
 ];
 
-export { SEARCH_DETAIL };
+export default SEARCH_DETAIL;
