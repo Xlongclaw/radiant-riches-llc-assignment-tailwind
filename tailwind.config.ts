@@ -21,6 +21,7 @@ const config: Config = {
         BLUE: "#1B88F4",
         LIGHTBLUE: "#F3F9FF",
         LIGHTORANGE: "#FFF4ED",
+        RED: "#EF4C5D",
       },
       padding: {
         xl: "300px",
