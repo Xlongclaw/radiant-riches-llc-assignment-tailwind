@@ -1,8 +1,10 @@
 import TextHeading from "@/components/text-heading";
 import React from "react";
-import SearchDetailsSection from "../search-details-section";
-import OptionSection from "../option-section";
+import SearchDetailsSection from "@/containers/search-details-section";
+import OptionSection from "@/containers/option-section";
 import RouteStrip from "@/components/route-strip";
+import ItemDisplayContainer from "@/containers/item-display-container";
+import DealsContainer from "@/containers/deals-container";
 
 const SearchResultSection: React.FC = () => {
   const searchInput = "Best Website builders in the US.";
@@ -12,6 +14,8 @@ const SearchResultSection: React.FC = () => {
       <SearchDetailsSection />
       <OptionSection />
       <RouteStrip />
+      <ItemDisplayContainer />
+      <DealsContainer />
     </div>
   );
 };
