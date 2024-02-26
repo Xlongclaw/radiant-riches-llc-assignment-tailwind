@@ -4,7 +4,7 @@ import SectionHeading from "@/components/section-heading";
 
 const DealsContainer = () => {
   return (
-    <div>
+    <div className="">
       <SectionHeading title="Related deals you might like for" />
       <div className="flex gap-4">
         <DealsWrapper />

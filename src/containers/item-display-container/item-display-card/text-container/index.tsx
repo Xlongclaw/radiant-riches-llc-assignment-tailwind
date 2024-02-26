@@ -1,14 +1,13 @@
 import React from "react";
 
-const TextContainer: React.FC = () => {
+const TextContainer: React.FC<{ title: string; description: string }> = ({
+  description,
+  title,
+}) => {
   return (
     <div>
       <h3 className="font-semibold text-GREY2">
-        WixPro 72-Inch Responsive Website Builder -
-        <span className="font-normal">
-          Comprehensive Digital Platform Creation Tool, Streamlined Design
-          Interface for Professional Websites and Online Stores (Black/Blue)
-        </span>
+        {title} -<span className="font-normal">{description}</span>
       </h3>
     </div>
   );

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-const page: React.FC = () => {
+const page = () => {
   return (
     <div className="bg-GREYBG flex flex-col justify-center items-center h-screen">
-      <h2>Welcome to Home</h2>
+      <h2>Search Route is not Yet Created</h2>
       <h3>{"(Only /search/* Route is created for the website)"}</h3>
       <h3>
         {"try going to"}{" "}
