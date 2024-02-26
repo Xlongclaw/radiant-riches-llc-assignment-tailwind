@@ -5,13 +5,17 @@ Hi! I'm **Madhuresh Verma**, a **Full Stack Web Developer**. I have developed th
 ## TechStack
 
 **1. Next JS - App router**
+
 **2. Tailwind CSS**
+
 **3. Typescript**
 
 ## Working Routes:
 
 `/search/*` : This route displays the search results for the queries. (Required in the assignment)
+
 `/` : Default route displays message to migrate to `/search/*` route. (UI not Developed as it is not required in the assignment)
+
 `/*` : displays message to migrate to `/search/*` route. (Not required in assignment)
 
 ### API endpoints
