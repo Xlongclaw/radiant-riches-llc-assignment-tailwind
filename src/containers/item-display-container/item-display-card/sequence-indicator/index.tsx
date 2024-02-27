@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * Component that renders the sequence number of the BuilderItem
+ * props.sequence - a number represneting the sequence of displayed item.
+ */
 const SequenceIndicator = ({ sequence }: { sequence: number }) => {
   return (
     <div
