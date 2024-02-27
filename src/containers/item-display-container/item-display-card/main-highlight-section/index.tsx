@@ -14,6 +14,7 @@ const MainHighLightSection = ({ data }: { data: MainHighLightPropsType }) => {
         {data.mainHighlight &&
           data.mainHighlight.map((highlight) => (
             <BaseHighLights
+              key={highlight.title}
               title={highlight.title}
               des={highlight.description}
             />

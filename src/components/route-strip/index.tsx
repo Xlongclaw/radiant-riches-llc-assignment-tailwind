@@ -15,7 +15,7 @@ const RouteStrip = () => {
   return (
     <div className="text-sm font-medium text-GREYLIGHT1 flex gap-4 py-3 flex-wrap">
       {routes.map((route, i) => (
-        <div className=" flex gap-4 items-center">
+        <div key={route} className=" flex gap-4 items-center">
 
           {/* Link to migrate to previous routes */}
           <Link key={`ROUTE_${i}`} href={`#`}>

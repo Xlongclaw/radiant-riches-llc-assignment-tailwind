@@ -16,7 +16,7 @@ const LinkList = ({
     <div className="flex flex-col gap-4">
       <h3 className="font-medium">{data.title}</h3>
       {data.links.map((link) => (
-        <Link className="font-light" href={link.link}>
+        <Link key={link.link} className="font-light" href={link.link}>
           {" "}
           {link.title}
         </Link>
