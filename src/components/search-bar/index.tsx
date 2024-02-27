@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -9,41 +8,81 @@ const SearchBar: React.FC = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setSearchInput(e.target.value);
   const router = useRouter();
+  const [expanded, setExpanded] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     router.push(`/search/${searchInput}`);
   };
+
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="h-9 w-64 bg-white rounded-lg flex items-center px-2 gap-2 "
-    >
+    <div className="flex items-center relative ">
       <Image
-        width={16}
-        height={16}
-        src={`/images/search.png`}
+        onClick={() => setExpanded(!expanded)}
+        width={26}
+        height={26}
+        src={`${expanded ? "/images/search.png" : "/images/search-white.png"}`}
         alt="search icon"
+        className={`nav-md:hidden flex rounded-full ${
+          expanded ? "bg-GREYBG p-2" : "bg-transparent p-1"
+        } `}
       />
-      <input
-        className="border-none focus:outline-none text-sm"
-        type="text"
-        name="search"
-        id="search"
-        value={searchInput}
-        onChange={handleChange}
-        placeholder="Search Something..."
-      />
-      <button type="submit">
+
+      <form
+        onSubmit={handleSubmit}
+        className="nav-md:h-9 h-12 w-64 hidden nav-md:static top-12 left-0 bg-ASCENT/10 nav-md:bg-white rounded-lg nav-md:flex items-center px-2 gap-2 "
+      >
         <Image
-          width={20}
-          height={20}
-          src={`/images/chevron-down.png`}
+          width={16}
+          height={16}
+          src={`/images/search.png`}
           alt="search icon"
-          className="-rotate-90 hover:bg-ASCENT/30 p-1 rounded-full"
         />
-      </button>
-    </form>
+        <input
+          className="border-none focus:outline-none text-sm bg-transparent"
+          type="text"
+          name="search"
+          id="search"
+          value={searchInput}
+          onChange={handleChange}
+          placeholder="Search Something..."
+        />
+        <button type="submit">
+          <Image
+            width={20}
+            height={20}
+            src={`/images/chevron-down.png`}
+            alt="search icon"
+            className="-rotate-90 hover:bg-ASCENT/30 p-1 rounded-full"
+          />
+        </button>
+      </form>
+      {expanded && (
+        <form
+          onSubmit={handleSubmit}
+          className="nav-md:h-9 h-12 w-64 absolute nav-md:static top-12 left-0 bg-ASCENT/10 nav-md:bg-white rounded-lg flex items-center px-4 gap-2 "
+        >
+          <input
+            className="border-none focus:outline-none text-sm bg-transparent"
+            type="text"
+            name="search"
+            id="search"
+            value={searchInput}
+            onChange={handleChange}
+            placeholder="Search Something..."
+          />
+          <button type="submit">
+            <Image
+              width={20}
+              height={20}
+              src={`/images/chevron-down.png`}
+              alt="search icon"
+              className="-rotate-90 hover:bg-ASCENT/30 p-1 rounded-full"
+            />
+          </button>
+        </form>
+      )}
+    </div>
   );
 };
 

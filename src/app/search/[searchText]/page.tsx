@@ -7,8 +7,8 @@ const page = ({ params }: { params: { searchText: string } }) => {
   return (
     <div>
       <NavigationBar />
-      <SearchResultSection searchInput={params.searchText} />
-      <Footer />
+      {/* <SearchResultSection searchInput={params.searchText} /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

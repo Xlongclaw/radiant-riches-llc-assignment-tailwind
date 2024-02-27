@@ -21,6 +21,7 @@ Hi! I'm **Madhuresh Verma**, a **Full Stack Web Developer**. I have developed th
 ### API endpoints
 
 `POST` `/api/search` : API endpoint to retrieve search results.
+
 Required Body : { "searchInput" : "any search query..." }
 
 ## Features

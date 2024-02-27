@@ -26,6 +26,15 @@ const config: Config = {
       padding: {
         xl: "300px",
       },
+      screens: {
+        "nav-xxl": "1280px",
+        "nav-xl": "960px",
+        "nav-lg": "830px",
+        "nav-md": "620px",
+        "nav-sm": "480px",
+        // "nav-xs": "960px",
+        // "nav-xxs": "960px",
+      },
     },
   },
   plugins: [],
