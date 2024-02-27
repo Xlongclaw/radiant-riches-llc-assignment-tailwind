@@ -7,7 +7,7 @@ const RightContainer: React.FC<{ rating: number; ratingTag: string }> = ({
   ratingTag,
 }) => {
   return (
-    <div className="flex flex-col justify-between w-full rating-md:w-[30rem] gap-4 items-center">
+    <div className="flex flex-col justify-between h-full w-full rating-md:w-[30rem] gap-4 rating-md:gap-16 items-center">
       <RatingContainer rating={rating} ratingTag={ratingTag} />
       <Button title={`View`} />
     </div>

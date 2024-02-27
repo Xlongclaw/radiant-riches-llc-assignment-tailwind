@@ -10,8 +10,7 @@ const page: React.FC = () => {
         {"try going to"}{" "}
         <Link
           href={`/search/Best%20Website%20Builder%20in%20the%20US`}
-          className="text-BLUE cursor-pointer hover:underline"
-        >
+          className="text-BLUE cursor-pointer hover:underline">
           /search/Best%20Website%20Builder%20in%20the%20US
         </Link>
       </h3>

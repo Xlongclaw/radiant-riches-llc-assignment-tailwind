@@ -7,7 +7,7 @@ import { FOOTER_DROPDOWN_LINKS } from "@/constants";
 const Footer = () => {
   return (
     <div className="bg-ASCENT p-32 text-GREYBG flex flex-col items-center main-c-lg:flex-row justify-center gap-32 text-nowrap">
-      <div className="flex flex-col items-center main-c-md:flex-row gap-32">
+      <div className="flex flex-col  main-c-md:flex-row gap-16 main-c-md:gap-48">
         {FOOTER_LINKS.map((linkObject, i) => (
           <LinkList key={`FOOTER_LINK_LIST_${i}`} data={linkObject} />
         ))}
