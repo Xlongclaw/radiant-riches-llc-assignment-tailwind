@@ -1,4 +1,4 @@
-import Button from "@/components/button";
+import Button from "@/components/button-blue";
 import Image from "next/image";
 import React from "react";
 import TagCard from "./tag-card";
