@@ -3,7 +3,11 @@ import Footer from "@/containers/footer";
 import NavigationBar from "@/containers/navigation-bar";
 import SearchResultSection from "@/containers/search-result-section";
 
-
+/**
+ * Component that is rendered at the /search/*.
+ * This component displays the search Page.
+ * params.searchString - value of Dynamic Route that renders the search result.
+ */
 const page = ({ params }: { params: { searchText: string } }) => {
   return (
     <div>

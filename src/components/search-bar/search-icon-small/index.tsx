@@ -8,11 +8,8 @@ import React from 'react'
  */
 const SearchIconSmall = ({expanded}:{expanded:boolean}) => {
   return (
-    <Image
-        width={26}
-        height={26}
+    <Image width={26} height={26} alt="search icon"
         src={`${expanded ? "/images/search.png" : "/images/search-white.png"}`}
-        alt="search icon"
         className={`nav-md:hidden flex rounded-full ${
           expanded ? "bg-GREYBG p-2" : "bg-transparent p-1"
         } `}

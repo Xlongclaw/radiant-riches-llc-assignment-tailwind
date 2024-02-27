@@ -1,6 +1,6 @@
 import React from "react";
 import RatingContainer from "./rating-container";
-import Button from "@/components/button-blue";
+import Button from "@/components/Button";
 
 const RightContainer: React.FC<{ rating: number; ratingTag: string }> = ({
   rating,

@@ -13,7 +13,6 @@ const SearchBar: React.FC = () => {
 
   // expanded - state variable used to display the searchBar when
   const [expanded, setExpanded] = useState(false);
-
   const changeSearchInput = (input:string)=>{
     setSearchInput(input)
   }
@@ -32,7 +31,6 @@ const SearchBar: React.FC = () => {
         ): (
         <SearchCard searchInput={searchInput} changeSearchInput={changeSearchInput} screen="large"/>
       )}
-
     </div>
   );
 };
