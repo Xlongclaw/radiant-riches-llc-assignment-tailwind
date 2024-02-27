@@ -6,7 +6,7 @@ const DealsContainer = () => {
   return (
     <div className="">
       <SectionHeading title="Related deals you might like for" />
-      <div className="grid grid-flow-col main-c-lg:flex gap-4 overflow-x-scroll">
+      <div className="grid grid-flow-col main-c-lg:flex gap-4 overflow-x-scroll hide-scrollbar">
         <DealsWrapper />
         <DealsWrapper />
         <DealsWrapper />

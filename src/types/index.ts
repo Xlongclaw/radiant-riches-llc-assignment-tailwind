@@ -21,7 +21,7 @@ type SearchItemType = {
   price?: number;
   sequence?: number;
   bestValue?: boolean;
-  bestChoise?: boolean;
+  bestChoice?: boolean;
   discount?: number;
   searchTags?: Array<string>;
 };

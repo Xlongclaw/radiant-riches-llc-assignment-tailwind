@@ -34,6 +34,7 @@ const BUILDERS_DATA = [
     rating: 9.5,
     tags: ["Excellent"],
     sequence: 2,
+    bestValue: true,
     searchTags: ["Best", "Website", "builders", "in", "the", "us"],
   },
   {

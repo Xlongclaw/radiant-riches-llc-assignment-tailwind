@@ -8,7 +8,7 @@ const page = ({ params }: { params: { searchText: string } }) => {
     <div>
       <NavigationBar />
       <SearchResultSection searchInput={params.searchText} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

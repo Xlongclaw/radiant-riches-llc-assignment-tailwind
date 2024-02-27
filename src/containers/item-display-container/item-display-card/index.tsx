@@ -5,6 +5,7 @@ import RightContainer from "./right-container";
 import MainHighLightSection from "./main-highlight-section";
 import SequenceIndicator from "./sequence-indicator";
 import { SearchItemType } from "@/types";
+import Tag from "./tag";
 
 const ItemsDisplayCard = ({ data }: { data: SearchItemType }) => {
   return (
@@ -25,6 +26,8 @@ const ItemsDisplayCard = ({ data }: { data: SearchItemType }) => {
       </div>
       <RightContainer rating={data.rating!} ratingTag={data.tags![0]} />
       <SequenceIndicator sequence={data.sequence!} />
+      {data.bestChoice && <Tag type="Best Choice" />}
+      {data.bestValue && <Tag type="Best Value" />}
     </div>
   );
 };

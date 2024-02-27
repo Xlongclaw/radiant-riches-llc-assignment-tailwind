@@ -2,6 +2,8 @@ import React from "react";
 import SearchDetailWrapper from "./search-detail-wrapper";
 import { SEARCH_DETAIL } from "@/constants";
 import SortMenu from "./sort-menu";
+import DropDownMenu from "@/components/drop-down-menu";
+import SEARCH_DETAILS_DROPDOWN from "@/constants/SEARCH_DETAILS_DROPDOWN";
 
 const SearchDetailsSection: React.FC = () => {
   return (
@@ -11,7 +13,12 @@ const SearchDetailsSection: React.FC = () => {
           <SearchDetailWrapper data={data} key={data.title} />
         ))}
       </div>
-      <SortMenu />
+      <DropDownMenu
+        direction="BOTTOM"
+        list={SEARCH_DETAILS_DROPDOWN}
+        selectedIndex={0}
+      />
+      {/* <SortMenu /> */}
     </div>
   );
 };
