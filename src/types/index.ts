@@ -39,6 +39,15 @@ type DropDownPropType = {
 
 type SearchCardPropType = {searchInput:string,changeSearchInput:(input:string)=>void,screen:"small"|"large"}
 
+type LinkListPropType = {
+  data: {
+    title: string;
+    links: Array<{
+      title: string;
+      link: string;
+    }>;
+  };
+}
 
 export type {
   TextHeadingProps,
@@ -46,5 +55,6 @@ export type {
   SearchItemType,
   MainHighLightPropsType,
   DropDownPropType,
-  SearchCardPropType
+  SearchCardPropType,
+  LinkListPropType
 };
