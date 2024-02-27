@@ -9,7 +9,7 @@ import SignupSection from "@/containers/signup-section";
 
 const SearchResultSection = ({ searchInput }: { searchInput: string }) => {
   return (
-    <div className="px-xl">
+    <div className="px-8 main-c-sm:px-[15vw] main-c-md:px-8 main-c-lg:px-16 main-c-xl:p-32 main-c-xxl:px-xl">
       <TextHeading title={decodeURI(searchInput)} />
       <SearchDetailsSection />
       <OptionSection />

@@ -6,7 +6,7 @@ import PriceContainer from "./price-container";
 
 const DealsWrapper = () => {
   return (
-    <div className="bg-WHITE w-1/3 flex flex-col items-center p-4 border border-GREY2/10 rounded-xl">
+    <div className="bg-WHITE transition-all duration-500 w-[18rem] main-c-sm:w-[20rem] main-c-lg:w-1/3 flex flex-col items-center p-4 border border-GREY2/10 rounded-xl">
       <Image
         className=" m-16"
         width={150}

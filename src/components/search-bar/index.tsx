@@ -60,7 +60,7 @@ const SearchBar: React.FC = () => {
       {expanded && (
         <form
           onSubmit={handleSubmit}
-          className="nav-md:h-9 h-12 w-64 absolute nav-md:static top-12 left-0 bg-ASCENT/10 nav-md:bg-white rounded-lg flex items-center px-4 gap-2 "
+          className="nav-md:h-9 h-12 w-64 absolute nav-md:static top-12 left-0 bg-GREY1 border rounded-lg flex items-center px-4 gap-2 "
         >
           <input
             className="border-none focus:outline-none text-sm bg-transparent"

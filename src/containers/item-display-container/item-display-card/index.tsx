@@ -8,7 +8,10 @@ import { SearchItemType } from "@/types";
 
 const ItemsDisplayCard = ({ data }: { data: SearchItemType }) => {
   return (
-    <div className="w-full bg-WHITE border border-GREYLIGHT1/10 p-3 rounded-2xl flex relative my-3">
+    <div
+      className="w-full bg-WHITE border border-GREYLIGHT1/10 p-3 rounded-2xl flex relative my-3 flex-col
+     main-c-md:flex-row items-center main-c-md:items-start"
+    >
       <ImageContainer image={data.image} imageTag={data.imageTag!} />
       <div className="pr-8">
         <TextContainer title={data.name} description={data.description!} />

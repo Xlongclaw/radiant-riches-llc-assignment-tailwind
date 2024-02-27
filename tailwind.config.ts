@@ -27,13 +27,26 @@ const config: Config = {
         xl: "300px",
       },
       screens: {
+        // NAVIGATION_BAR BREAKPOINTS
         "nav-xxl": "1280px",
         "nav-xl": "960px",
         "nav-lg": "830px",
         "nav-md": "620px",
         "nav-sm": "480px",
-        // "nav-xs": "960px",
-        // "nav-xxs": "960px",
+
+        // RATING_CONTAINER BREAKPOINTS
+        "rating-xxl": "1396px",
+        "rating-xl": "1000px",
+        "rating-lg": "830px",
+        "rating-md": "640px",
+        "rating-sm": "480px",
+
+        // SEARCH CONTAINERS BREAKPOINTS
+        "main-c-xxl": "1280px",
+        "main-c-xl": "960px",
+        "main-c-lg": "830px",
+        "main-c-md": "640px",
+        "main-c-sm": "480px",
       },
     },
   },
