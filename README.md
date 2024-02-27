@@ -28,8 +28,7 @@ Required Body : { "searchInput" : "any search query..." }
 
 1. Responsive User Interface.
 2. Search is properly working.
-3. Animations using Framer Motion.
-4. Optimal Performance.
-5. Developed Custom Route Handlers for Data fetching.
-6. Custom hooks to extract logic from TSX components.
-7. Used typescript for implementing types to reduce errors.
+3. Optimal Performance.
+4. Developed Custom Route Handlers for Data fetching.
+5. Custom hooks to extract logic from TSX components.
+6. Used typescript for implementing types to reduce errors.
